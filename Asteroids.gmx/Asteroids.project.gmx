@@ -18,6 +18,7 @@
     <object>objects\obj_bullet</object>
     <object>objects\obj_asteroid</object>
     <object>objects\obj_small_asteroid</object>
+    <object>objects\obj_score</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_game</room>
