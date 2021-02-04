@@ -11,13 +11,13 @@ For personal tracking purposes, a list of items still to work on.
 - [ ] Scoring
 - [ ] Title menu
 - [ ] Sprites
-#### Sound
-    - [ ] SFX
-    - [ ] Music
-#### Extras
-    - [ ] Lives
-    - [ ] Game Over logic
-    - [ ] Character selection
+##### Sound
+- [ ] SFX
+- [ ] Music
+##### Extras
+- [ ] Lives
+- [ ] Game Over logic
+- [ ] Character selection
 
 ### Readme
 - [ ] How to run the game
