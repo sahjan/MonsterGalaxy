@@ -7,12 +7,12 @@ This is a personal project purely intended for practicing game development in Ga
 For personal tracking purposes, a list of items still to work on.
 
 ### Game
-- [ ] MVP
-- [ ] Scoring
+- [x] MVP
+- [x] Scoring
 - [ ] Title menu
 - [ ] Sprites
 ##### Sound
-- [ ] SFX
+- [x] SFX
 - [ ] Music
 ##### Extras
 - [ ] Lives
