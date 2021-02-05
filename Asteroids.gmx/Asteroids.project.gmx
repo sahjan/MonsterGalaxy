@@ -30,6 +30,7 @@
     <object>objects\obj_spawner</object>
     <object>objects\obj_deadplayer</object>
     <object>objects\obj_gameover</object>
+    <object>objects\obj_lives</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_game</room>
