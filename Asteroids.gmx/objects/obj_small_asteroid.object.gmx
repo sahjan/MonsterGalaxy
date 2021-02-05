@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>global.points = global.points + 75;
+audio_play_sound(snd_explosion, 0, 0);
 </string>
           </argument>
         </arguments>

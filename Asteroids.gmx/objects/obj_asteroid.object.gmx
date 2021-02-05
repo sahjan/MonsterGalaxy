@@ -54,8 +54,9 @@ speed = 0.5 + random(2)
             <kind>1</kind>
             <string>instance_create(x, y, obj_small_asteroid);
 instance_create(x, y, obj_small_asteroid);
-
 global.points = global.points + 50;
+
+audio_play_sound(snd_explosion, 0, 0);
 </string>
           </argument>
         </arguments>
