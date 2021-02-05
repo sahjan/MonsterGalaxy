@@ -15,8 +15,8 @@ For personal tracking purposes, a list of items still to work on.
 - [x] SFX
 - [ ] Music
 ##### Extras
-- [ ] Lives
-- [ ] Game Over logic
+- [x] Lives
+- [x] Game Over logic
 - [ ] Character selection
 
 ### Readme
