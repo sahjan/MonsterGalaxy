@@ -11,6 +11,7 @@
   <sprites name="sprites">
     <sprite>sprites\spr_deadplayer</sprite>
     <sprite>sprites\spr_player</sprite>
+    <sprite>sprites\spr_invincible_player</sprite>
     <sprite>sprites\spr_bullet</sprite>
     <sprite>sprites\spr_asteroid</sprite>
     <sprite>sprites\spr_small_asteroid</sprite>
