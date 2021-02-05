@@ -25,7 +25,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_speed = 0;
+            <string>while(distance_to_object(obj_player) &lt; 75) {
+    x = random(room_width);
+    y = random(room_height);
+}
+
+image_speed = 0;
 image_index = irandom(2);
 
 direction = random(360)
@@ -118,13 +123,35 @@ audio_play_sound(snd_explosion, 0, 0);
         <exetype>2</exetype>
         <functionname></functionname>
         <codestring></codestring>
-        <whoName>self</whoName>
+        <whoName>other</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>game_restart();
+            <string>var randomangle = random(360);
+var o;
+
+o = instance_create(x,y,obj_deadplayer);
+o.angle = 0 + randomangle;
+
+o = instance_create(x,y,obj_deadplayer);
+o.angle = 120 + randomangle;
+
+o = instance_create(x,y,obj_deadplayer);
+o.angle = 240 + randomangle;
+
+with (obj_deadplayer) {
+    direction = angle;
+    image_angle = angle;
+    speed = 3;
+}
+
+audio_play_sound(snd_explosion, 10, 0);
+
+instance_create(0,0, obj_gameover);
+
+instance_destroy();
 </string>
           </argument>
         </arguments>
