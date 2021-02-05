@@ -9,16 +9,20 @@ For personal tracking purposes, a list of items still to work on.
 ### Game
 - [x] MVP
 - [x] Scoring
-- [ ] Title menu
+- [x] Lives
+- [x] Game Over logic
+- [ ] Title/menu screen
 - [ ] Sprites
 ##### Sound
 - [x] SFX
 - [ ] Music
 ##### Extras
-- [x] Lives
-- [x] Game Over logic
+- [ ] 1-up
+- [ ] Animations
 - [ ] Character selection
-
+- [ ] Environment selection
+- [ ] Panning environment
+- [ ] Power-ups
 ### Readme
 - [ ] How to run the game
 - [ ] How to play
