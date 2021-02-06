@@ -12,6 +12,7 @@ For personal tracking purposes, a list of items still to work on.
 - [x] Lives
 - [x] Game Over logic
 - [ ] Title/menu screen
+- [ ] High scores
 - [ ] Sprites
 ##### Sound
 - [x] SFX
