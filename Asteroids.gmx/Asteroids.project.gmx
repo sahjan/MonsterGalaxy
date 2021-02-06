@@ -15,9 +15,13 @@
     <sprite>sprites\spr_bullet</sprite>
     <sprite>sprites\spr_asteroid</sprite>
     <sprite>sprites\spr_small_asteroid</sprite>
+    <sprite>sprites\spr_menuarrow</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\scr_menu.gml</script>
+  </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_small</font>
     <font>fonts\fnt_large</font>
@@ -32,9 +36,13 @@
     <object>objects\obj_deadplayer</object>
     <object>objects\obj_gameover</object>
     <object>objects\obj_lives</object>
+    <object>objects\obj_menu</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_menu</room>
+    <room>rooms\rm_characterselect</room>
     <room>rooms\rm_game</room>
+    <room>rooms\rm_highscores</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
