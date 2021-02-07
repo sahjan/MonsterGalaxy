@@ -30,11 +30,7 @@
     y = random(room_height);
 }
 
-//An array of all the possible monsters
-enemies[0] = spr_asteroid;
-enemies[1] = spr_brainmonster;
-
-sprite_index = enemies[irandom(1)];
+sprite_index = global.enemies[irandom(1)];
 
 image_speed = 1/10;
 //image_index = irandom(2);
@@ -63,56 +59,13 @@ speed = 0.5 + random(2)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(x, y, obj_small_enemy);
-instance_create(x, y, obj_small_enemy);
+            <string>// Set the sprite of the smaller enemy based on the sprite of the current instance of the bigger enemy
+// and create two smaller enemies
+scr_spawn_small_enemies(sprite_index);
+
 global.points = global.points + 50;
 
 audio_play_sound(snd_explosion, 0, 0);
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_bullet">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>other</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>instance_destroy();
-
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>instance_destroy();
 </string>
           </argument>
         </arguments>
@@ -169,6 +122,54 @@ audio_play_sound(snd_explosion, 0, 0);
 
 
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_bullet">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>other</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Destroy the bullet
+//So it doesn't keep flying off after the enemy is destroyed
+instance_destroy();
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Destroy the enemy
+instance_destroy();
 </string>
           </argument>
         </arguments>

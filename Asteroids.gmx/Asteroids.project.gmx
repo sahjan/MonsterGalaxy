@@ -20,6 +20,8 @@
     <sprite>sprites\spr_small_asteroid</sprite>
     <sprite>sprites\spr_menuarrow</sprite>
     <sprite>sprites\spr_brainmonster</sprite>
+    <sprite>sprites\spr_small_brainmonster1</sprite>
+    <sprite>sprites\spr_small_brainmonster2</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -27,6 +29,7 @@
     <script>scripts\scr_menu.gml</script>
     <script>scripts\scr_charactermenu.gml</script>
     <script>scripts\scr_start.gml</script>
+    <script>scripts\scr_spawn_small_enemies.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_small</font>
