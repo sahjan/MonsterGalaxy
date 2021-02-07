@@ -14,13 +14,13 @@ For personal tracking purposes, a list of items still to work on.
 - [x] Title/menu screen
 - [x] Character selection
 - [ ] Beginning countdown
-- [ ] Screen formatting
 - [ ] High scores
 #### Appearance
 - [ ] Sprites
 - [ ] Game screen
 - [ ] Main menu screen
 - [ ] Character select screen
+- [ ] Room transitions
 ##### Extras
 - [ ] 1-up
 - [ ] Power-ups
