@@ -26,17 +26,17 @@
   <scripts name="scripts">
     <script>scripts\scr_menu.gml</script>
     <script>scripts\scr_charactermenu.gml</script>
-    <script>scripts\scr_randommonster.gml</script>
+    <script>scripts\scr_start.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_small</font>
     <font>fonts\fnt_large</font>
   </fonts>
   <objects name="objects">
-    <object>objects\obj_player</object>
     <object>objects\obj_bullet</object>
-    <object>objects\obj_asteroid</object>
-    <object>objects\obj_small_asteroid</object>
+    <object>objects\obj_enemy</object>
+    <object>objects\obj_player</object>
+    <object>objects\obj_small_enemy</object>
     <object>objects\obj_score</object>
     <object>objects\obj_spawner</object>
     <object>objects\obj_deadplayer</object>

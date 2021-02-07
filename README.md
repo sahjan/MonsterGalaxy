@@ -11,19 +11,21 @@ For personal tracking purposes, a list of items still to work on.
 - [x] Scoring
 - [x] Lives
 - [x] Game Over logic
-- [ ] Title/menu screen
+- [x] Title/menu screen
+- [x] Character selection
 - [ ] High scores
 - [ ] Sprites
+##### Fixes
+- [ ] Dynamic invincibility sprite
 ##### Sound
 - [x] SFX
 - [ ] Music
 ##### Extras
 - [ ] 1-up
-- [ ] Animations
-- [ ] Character selection
+- [ ] Power-ups
+- [ ] Death animation
 - [ ] Environment selection
 - [ ] Panning environment
-- [ ] Power-ups
 ### Readme
 - [ ] How to run the game
 - [ ] How to play

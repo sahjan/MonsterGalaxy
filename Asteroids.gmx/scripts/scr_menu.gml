@@ -4,7 +4,7 @@ switch (menuPosn)
     case 0:
     {
         //room_goto_next();
-        room_goto(rm_game);
+        room_goto(rm_characterselect);
         break;
     }
     case 1:

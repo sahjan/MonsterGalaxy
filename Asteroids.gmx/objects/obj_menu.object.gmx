@@ -25,7 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>menu[0] = "Start";
+            <string>//run the start script
+scr_start();
+
+menu[0] = "Start";
 menu[1] = "High Scores";
 menu[2] = "Quit";
 

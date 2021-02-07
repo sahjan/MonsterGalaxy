@@ -25,16 +25,16 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (!instance_exists(obj_asteroid)) {
-    instance_create(random(room_width), random(room_height), obj_asteroid);
-    instance_create(random(room_width), random(room_height), obj_asteroid);
-    instance_create(random(room_width), random(room_height), obj_asteroid);
-    instance_create(random(room_width), random(room_height), obj_asteroid);
-    instance_create(random(room_width), random(room_height), obj_asteroid);
-    instance_create(random(room_width), random(room_height), obj_asteroid);
-    instance_create(random(room_width), random(room_height), obj_asteroid);
-    instance_create(random(room_width), random(room_height), obj_asteroid);
-    instance_create(random(room_width), random(room_height), obj_asteroid);
+            <string>if (!instance_exists(obj_enemy)) {
+    instance_create(random(room_width), random(room_height), obj_enemy);
+    instance_create(random(room_width), random(room_height), obj_enemy);
+    instance_create(random(room_width), random(room_height), obj_enemy);
+    instance_create(random(room_width), random(room_height), obj_enemy);
+    instance_create(random(room_width), random(room_height), obj_enemy);
+    instance_create(random(room_width), random(room_height), obj_enemy);
+    instance_create(random(room_width), random(room_height), obj_enemy);
+    instance_create(random(room_width), random(room_height), obj_enemy);
+    instance_create(random(room_width), random(room_height), obj_enemy);
 }
 </string>
           </argument>

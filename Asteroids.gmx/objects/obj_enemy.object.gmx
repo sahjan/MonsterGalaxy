@@ -31,10 +31,10 @@
 }
 
 //An array of all the possible monsters
-possible_sprites[0] = spr_asteroid;
-possible_sprites[1] = spr_brainmonster;
+enemies[0] = spr_asteroid;
+enemies[1] = spr_brainmonster;
 
-sprite_index = possible_sprites[irandom(1)];
+sprite_index = enemies[irandom(1)];
 
 image_speed = 1/10;
 //image_index = irandom(2);
@@ -63,8 +63,8 @@ speed = 0.5 + random(2)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(x, y, obj_small_asteroid);
-instance_create(x, y, obj_small_asteroid);
+            <string>instance_create(x, y, obj_small_enemy);
+instance_create(x, y, obj_small_enemy);
 global.points = global.points + 50;
 
 audio_play_sound(snd_explosion, 0, 0);
