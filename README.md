@@ -13,8 +13,13 @@ For personal tracking purposes, a list of items still to work on.
 - [x] Game Over logic
 - [x] Title/menu screen
 - [x] Character selection
+- [ ] Screen formatting
 - [ ] High scores
+#### Appearance
 - [ ] Sprites
+- [ ] Game screen
+- [ ] Main menu screen
+- [ ] Character select screen
 ##### Extras
 - [ ] 1-up
 - [ ] Power-ups
