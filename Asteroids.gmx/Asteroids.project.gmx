@@ -10,7 +10,10 @@
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_deadplayer</sprite>
-    <sprite>sprites\spr_player</sprite>
+    <sprite>sprites\spr_player_black</sprite>
+    <sprite>sprites\spr_player_blue</sprite>
+    <sprite>sprites\spr_player_red</sprite>
+    <sprite>sprites\spr_player_yellow</sprite>
     <sprite>sprites\spr_invincible_player</sprite>
     <sprite>sprites\spr_bullet</sprite>
     <sprite>sprites\spr_asteroid</sprite>
@@ -21,6 +24,8 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scr_menu.gml</script>
+    <script>scripts\scr_charactermenu.gml</script>
+    <script>scripts\scr_randommonster.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_small</font>
@@ -37,6 +42,7 @@
     <object>objects\obj_gameover</object>
     <object>objects\obj_lives</object>
     <object>objects\obj_menu</object>
+    <object>objects\obj_charactermenu</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_menu</room>

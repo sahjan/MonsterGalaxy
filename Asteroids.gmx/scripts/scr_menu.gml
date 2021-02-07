@@ -3,12 +3,13 @@ switch (menuPosn)
 {
     case 0:
     {
-        room_goto_next();
+        //room_goto_next();
+        room_goto(rm_game);
         break;
     }
     case 1:
     {
-        room_goto(3);
+        room_goto(rm_highscores);
         break;
     }
     case 2:

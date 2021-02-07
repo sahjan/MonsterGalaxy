@@ -129,7 +129,7 @@ audio_play_sound(snd_explosion, 0, 0);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(sprite_index == spr_player) {
+            <string>if(sprite_index != spr_invincible_player) {
     var randomangle = random(360);
     var o;
 
