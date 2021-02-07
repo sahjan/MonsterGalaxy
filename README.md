@@ -15,17 +15,18 @@ For personal tracking purposes, a list of items still to work on.
 - [x] Character selection
 - [ ] High scores
 - [ ] Sprites
-##### Fixes
-- [ ] Dynamic invincibility sprite
-##### Sound
-- [x] SFX
-- [ ] Music
 ##### Extras
 - [ ] 1-up
 - [ ] Power-ups
 - [ ] Death animation
 - [ ] Environment selection
 - [ ] Panning environment
+##### Fixes
+- [ ] Dynamic invincibility sprite
+- [ ] Refactor title menu/character select menu into one script
+##### Sound
+- [x] SFX
+- [ ] Music
 ### Readme
 - [ ] How to run the game
 - [ ] How to play
