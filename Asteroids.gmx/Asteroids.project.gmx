@@ -10,7 +10,7 @@
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_deadplayer</sprite>
-    <sprite>sprites\spr_player_black</sprite>
+    <sprite>sprites\spr_player_redgunship</sprite>
     <sprite>sprites\spr_player_blue</sprite>
     <sprite>sprites\spr_player_red</sprite>
     <sprite>sprites\spr_player_yellow</sprite>
@@ -19,6 +19,7 @@
     <sprite>sprites\spr_asteroid</sprite>
     <sprite>sprites\spr_small_asteroid</sprite>
     <sprite>sprites\spr_menuarrow</sprite>
+    <sprite>sprites\spr_brainmonster</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>

@@ -49,7 +49,7 @@ alarm[0] = 180;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>sprite_index = spr_player_black;
+            <string>sprite_index = spr_player_redgunship;
 </string>
           </argument>
         </arguments>
