@@ -4,6 +4,9 @@ switch (menuPosn)
     case 0:
     {
         //default character is red gunship
+        if (global.character != spr_player_redgunship) {
+            global.character = spr_player_redgunship;
+        }
         room_goto(rm_game);
         break;
     }
