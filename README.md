@@ -14,7 +14,7 @@ For personal tracking purposes, a list of items still to work on.
 - [x] Title/menu screen
 - [x] Character selection
 - [x] Beginning countdown
-- [ ] Pause
+- [x] Pause
 - [ ] High scores
 #### Appearance
 - [ ] Sprites
