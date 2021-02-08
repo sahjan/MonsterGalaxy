@@ -47,6 +47,8 @@
     <object>objects\obj_lives</object>
     <object>objects\obj_menu</object>
     <object>objects\obj_charactermenu</object>
+    <object>objects\obj_countdown</object>
+    <object>objects\obj_pause</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_menu</room>

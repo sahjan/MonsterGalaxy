@@ -13,7 +13,8 @@ For personal tracking purposes, a list of items still to work on.
 - [x] Game Over logic
 - [x] Title/menu screen
 - [x] Character selection
-- [ ] Beginning countdown
+- [x] Beginning countdown
+- [ ] Pause
 - [ ] High scores
 #### Appearance
 - [ ] Sprites

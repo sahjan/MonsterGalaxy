@@ -11,7 +11,7 @@ switch (sprite_index)
     }
     case spr_brainmonster:
     {
-        for (s = 0; s < array_length_1d(global.small_brainmonsters); s += 1;) {
+        for (var s = 0; s < array_length_1d(global.small_brainmonsters); s++) {
             object_set_sprite(obj_small_enemy, global.small_brainmonsters[s]);
             instance_create(x, y, obj_small_enemy);
         }
