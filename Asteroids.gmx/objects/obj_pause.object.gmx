@@ -55,10 +55,8 @@ pause_bg = surface_create(room_width, room_height);
     //Draw 'Pause' text
     draw_set_halign(fa_center);
     draw_set_font(fnt_small);
+    //shadow effect
     scr_texteffects(room_width/2, room_height/2, "Paused", c_white);
-    
-    //testing the switch statement
-    scr_texteffects(room_width/2, room_height/2 + 100, "Paused", c_white, c_black);
 }
 </string>
           </argument>
