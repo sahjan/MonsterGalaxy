@@ -30,6 +30,7 @@
     <script>scripts\scr_charactermenu.gml</script>
     <script>scripts\scr_start.gml</script>
     <script>scripts\scr_spawn_small_enemies.gml</script>
+    <script>scripts\scr_texteffects.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_small</font>
