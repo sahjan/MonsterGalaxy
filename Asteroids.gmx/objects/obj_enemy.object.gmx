@@ -30,10 +30,9 @@
     y = random(room_height);
 }
 
-sprite_index = global.enemies[irandom(1)];
+sprite_index = global.enemies[irandom(array_length_1d(global.enemies) - 1)];
 
 image_speed = 1/10;
-//image_index = irandom(2);
 
 direction = random(360)
 speed = 0.5 + random(2)

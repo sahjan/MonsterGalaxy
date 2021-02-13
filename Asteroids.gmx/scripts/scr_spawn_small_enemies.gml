@@ -17,6 +17,14 @@ switch (sprite_index)
         }
         break;
     }
+    case spr_snailmonster:
+    {
+        for (var s = 0; s < array_length_1d(global.small_snailmonsters); s++) {
+            object_set_sprite(obj_small_enemy, global.small_snailmonsters[s]);
+            instance_create(x, y, obj_small_enemy);
+        }
+        break;
+    }
     default:
     {
         break;

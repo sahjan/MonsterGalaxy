@@ -1,14 +1,15 @@
-// Do things for each menu option
+// Do things for each pause menu option
 switch (menuPosn)
 {
     case 0:
     {
-        room_goto(rm_characterselect);
+        paused = false;
+        instance_activate_all();
         break;
     }
     case 1:
     {
-        room_goto(rm_highscores);
+        room_goto(rm_menu);
         break;
     }
     case 2:

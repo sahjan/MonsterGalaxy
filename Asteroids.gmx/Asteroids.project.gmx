@@ -20,7 +20,10 @@
     <sprite>sprites\spr_small_asteroid</sprite>
     <sprite>sprites\spr_menuarrow</sprite>
     <sprite>sprites\spr_brainmonster</sprite>
+    <sprite>sprites\spr_snailmonster</sprite>
     <sprite>sprites\spr_small_brainmonster1</sprite>
+    <sprite>sprites\spr_small_snailmonster1</sprite>
+    <sprite>sprites\spr_small_snailmonster2</sprite>
     <sprite>sprites\spr_small_brainmonster2</sprite>
   </sprites>
   <backgrounds name="background"/>
@@ -31,6 +34,7 @@
     <script>scripts\scr_start.gml</script>
     <script>scripts\scr_spawn_small_enemies.gml</script>
     <script>scripts\scr_texteffects.gml</script>
+    <script>scripts\scr_pausemenu.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_small</font>

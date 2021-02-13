@@ -27,6 +27,66 @@
             <kind>1</kind>
             <string>paused = false;
 pause_bg = surface_create(room_width, room_height);
+
+pause_menu[0] = "Resume";
+pause_menu[1] = "Main Menu";
+pause_menu[2] = "Quit";
+
+//the amount of space you want between each menu item
+space = 64;
+
+//this variable keeps track of where our cursor is on the menu
+menuPosn = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (paused) {
+    //This code allows us to move up and down the menu with the cursor
+    var move = 0;
+    move -= max(keyboard_check_pressed(vk_up), keyboard_check_pressed(ord("W")), 0);
+    move += max(keyboard_check_pressed(vk_down),keyboard_check_pressed(ord("S")), 0);
+    
+    //menuPosn from the Create event
+    if (move != 0) {
+        menuPosn += move;
+        if (menuPosn &lt; 0) {
+            //take it to the bottom of the menu
+            menuPosn = array_length_1d(pause_menu) - 1;
+        }
+        else if (menuPosn &gt; array_length_1d(pause_menu) - 1) {
+            //take it to the top of the menu
+            menuPosn = 0;
+        }
+    }
+    
+    //selecting a menu option
+    var push;
+    push = max(keyboard_check_pressed(vk_enter), keyboard_check_pressed(vk_space), 0);
+    
+    if (push == 1) {
+        //a key has been pressed. Run the menu script
+        scr_pausemenu();
+    }
+}
 </string>
           </argument>
         </arguments>
@@ -54,9 +114,27 @@ pause_bg = surface_create(room_width, room_height);
     
     //Draw 'Pause' text
     draw_set_halign(fa_center);
+    draw_set_valign(fa_center);
     draw_set_font(fnt_small);
+    draw_set_colour(c_white);
+    draw_text(room_width/2, room_height/2 - (space * 2), "Paused");
     //shadow effect
-    scr_texteffects(room_width/2, room_height/2, "Paused", c_white);
+    //scr_texteffects(room_width/2, room_height/2 + space, "Paused", c_white);
+    
+    //Draw the menu
+    draw_set_halign(fa_left);
+    draw_set_valign(fa_left);
+    draw_set_font(fnt_small);
+    draw_set_colour(c_white);
+    
+    //loop through the menu array and draw each menu item
+    var m;
+    for (m = 0; m &lt; array_length_1d(pause_menu); m += 1) {
+        draw_text(room_width/2 + space, room_height/2 + (m * space), string(pause_menu[m]));
+    }
+    
+    //draw the arrow
+    draw_sprite(spr_menuarrow, image_index, room_width/2 + 16, room_height/2 + (menuPosn * space));
 }
 </string>
           </argument>
@@ -81,7 +159,6 @@ pause_bg = surface_create(room_width, room_height);
           <argument>
             <kind>1</kind>
             <string>if (!paused) {
-    paused = true;
     if (!surface_exists(pause_bg)) {
         pause_bg = surface_create(room_width, room_height);
     }
@@ -89,10 +166,17 @@ pause_bg = surface_create(room_width, room_height);
     surface_copy(pause_bg, 0, 0, application_surface);
     surface_reset_target();
     instance_deactivate_all(true);
+    paused = true;
+    
+    //pause all sounds
+    audio_pause_all();
 }
 else {
     paused = false;
     instance_activate_all();
+    
+    //resume all sounds
+    audio_resume_all();
 }
 </string>
           </argument>
