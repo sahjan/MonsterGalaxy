@@ -1,6 +1,6 @@
-# Asteroids Game
+# Monster Galaxy
 
-A simple, retro Asteroids game developed in GameMaker Studio 1.4.
+A simple, retro Asteroids-like game developed in GameMaker Studio 1.4.
 This is a personal project purely intended for practicing game development in GameMaker Studio.
 
 ## To do
